@@ -1,0 +1,98 @@
+
+.main {
+    margin-top: 150px !important;
+  }
+  
+  .container {
+    max-width: 93vw !important;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+  }
+  
+  .home {
+    display: none;
+    font-size: 10px;
+    color: #a3a3a3;
+  }
+  
+  .home span {
+    color: black;
+    font-weight: 600;
+  }
+  
+  .para {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 2;
+    color: rgb(81, 81, 81);
+    text-align: center !important;
+  }
+  
+
+  .main h1 {
+    text-align: center !important;
+    padding-top: 40px;
+    font-size: 44px;
+    font-weight: 400;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px;
+  }
+  
+
+  
+  /* For screens with width <= 1024px */
+  @media screen and (max-width: 1024px) {
+    .main {
+      margin-top: 60px !important;
+    }
+  
+    .main h1 {
+      padding-top: 100px;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  
+    .para {
+      width: 70%;
+    }
+  }
+  
+  /* For screens with width <= 768px */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* For screens with width <= 480px */
+  @media screen and (max-width: 480px) {
+    .main {
+      margin-top: 85px;
+    }
+  
+    .main h1 {
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .para {
+      font-size: 15px;
+      width: 100%;
+      line-height: 1.5;
+    }
+  
+    .home {
+      display: block;
+    }
+  }

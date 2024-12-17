@@ -1,0 +1,63 @@
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  
+ 
+  .filter-sidebar {
+    width: 250px;
+    padding: 15px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filter-options h4 {
+    padding-top: 10px;
+    border-top: 1px solid gray;
+  }
+  
+  .filter-options label {
+    margin-bottom: 5px;
+  }
+  
+  .filter-options select {
+    padding: 5px;
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-sidebar {
+      width: 100%;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      right: -100%; 
+      transition: right 0.3s ease;
+    }
+  
+    .filter-sidebar.active {
+      right: 0; 
+    }
+  
+    .toggle-button {
+      display: inline-block;
+      padding: 8px 10px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  } 
+
+
+  
